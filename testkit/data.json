@@ -1,0 +1,1289 @@
+[
+  {
+    "name": "Source",
+    "query": "?type=setOptions&source=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "source": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAACPdQAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Fee",
+    "query": "?type=setOptions&fee=500",
+    "params": {
+      "fee": "500",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB9AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Memo/text",
+    "query": "?type=setOptions&memo=Hello_World!",
+    "params": {
+      "memo": {
+        "type": "text",
+        "value": "Hello_World!"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAADEhlbGxvX1dvcmxkIQAAAAEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Memo/text (binary)",
+    "query": "?type=setOptions&memo=base64:BASE64",
+    "params": {
+      "memo": {
+        "type": "base64",
+        "value": "BASE64"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAQEhOsAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Memo/text (binary/NULL)",
+    "query": "?type=setOptions&memo=base64:AAA",
+    "params": {
+      "memo": {
+        "type": "base64",
+        "value": "AAA"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Memo/id",
+    "query": "?type=setOptions&memo=id:1234567890",
+    "params": {
+      "memo": {
+        "type": "id",
+        "value": "1234567890"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAEmWAtIAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Memo/hash",
+    "query": "?type=setOptions&memo=hash:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "memo": {
+        "type": "hash",
+        "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAADCgqfKmdylCVXq1NV12r0Qvj2XgEKCp8qZ3KUJVerU1UAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Memo/return",
+    "query": "?type=setOptions&memo=return:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "memo": {
+        "type": "return",
+        "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+      },
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAECgqfKmdylCVXq1NV12r0Qvj2XgEKCp8qZ3KUJVerU1UAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "MinTime",
+    "query": "?type=setOptions&minTime=2001-01-01",
+    "params": {
+      "minTime": "2001-01-01",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MinTime (minutes)",
+    "query": "?type=setOptions&minTime=2001-01-01T01:01",
+    "params": {
+      "minTime": "2001-01-01T01:01Z",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MinTime (minutes UTC)",
+    "query": "?type=setOptions&minTime=2001-01-01T01:01Z",
+    "queryConverted": "?type=setOptions&minTime=2001-01-01T01:01",
+    "params": {
+      "minTime": "2001-01-01T01:01Z",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MinTime (minutes+timezone)",
+    "query": "?type=setOptions&minTime=2001-01-01T11:00+01:00",
+    "queryConverted": "?type=setOptions&minTime=2001-01-01T10:00",
+    "params": {
+      "minTime": "2001-01-01T10:00Z",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MaxTime",
+    "query": "?type=setOptions&maxTime=2030-01-01",
+    "params": {
+      "maxTime": "2030-01-01",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAHDb2IAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MaxTime (relative)",
+    "query": "?type=setOptions&maxTime=+3",
+    "noConversion": true,
+    "params": {
+      "maxTime": "2020-05-10T17:16:15Z",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAF64Nt8AAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "MinTime+MaxTime",
+    "query": "?type=setOptions&minTime=2017-01-01&maxTime=2030-01-01",
+    "params": {
+      "minTime": "2017-01-01",
+      "maxTime": "2030-01-01",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAABYaEaAAAAAAHDb2IAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Network",
+    "query": "?type=setOptions&network=test",
+    "params": {
+      "network": "test",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Horizon",
+    "query": "?type=setOptions&network=multisig&horizon=example.org",
+    "noXdr": true,
+    "params": {
+      "network": "multisig",
+      "horizon": "https://example.org",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Callback",
+    "query": "?type=setOptions&callback=example.org",
+    "params": {
+      "callback": "https://example.org",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Account Merge",
+    "query": "?type=accountMerge&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "accountMerge",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Allow Trust (authorize)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=true",
+    "queryConverted": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET",
+    "params": {
+      "operations": [
+        {
+          "type": "allowTrust",
+          "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "assetCode": "ASSET",
+          "authorize": true
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAEAAAAAAAAAAA=="
+  },
+  {
+    "name": "Allow Trust (revoke)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=false",
+    "params": {
+      "operations": [
+        {
+          "type": "allowTrust",
+          "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "assetCode": "ASSET",
+          "authorize": false
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Bump Sequence",
+    "query": "?type=bumpSequence&bumpTo=1234567890",
+    "params": {
+      "operations": [
+        {
+          "type": "bumpSequence",
+          "bumpTo": "1234567890"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAALAAAAAEmWAtIAAAAAAAAAAA=="
+  },
+  {
+    "name": "Change Trust (max limit)",
+    "query": "?type=changeTrust&asset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&limit=922337203685.4775807",
+    "queryConverted": "?type=changeTrust&asset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "changeTrust",
+          "asset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAGAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//////////AAAAAAAAAAA="
+  },
+  {
+    "name": "Change Trust (max limit, syntactic sugar)",
+    "query": "?type=changeTrust&asset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "changeTrust",
+          "asset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAGAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//////////AAAAAAAAAAA="
+  },
+  {
+    "name": "Change Trust (arbitrary limit)",
+    "query": "?type=changeTrust&asset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&limit=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "changeTrust",
+          "asset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "limit": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAGAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAA="
+  },
+  {
+    "name": "Change Trust (removal)",
+    "query": "?type=changeTrust&asset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&limit=0",
+    "params": {
+      "operations": [
+        {
+          "type": "changeTrust",
+          "asset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "limit": "0"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAGAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Create Account",
+    "query": "?type=createAccount&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&startingBalance=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "createAccount",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "startingBalance": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAAAAAAAAA=="
+  },
+  {
+    "name": "Create Offer (backward compatibility)",
+    "query": "?type=createPassiveOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "queryConverted": "?type=createPassiveSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "createPassiveSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAAAAAAAA"
+  },
+  {
+    "name": "Create Passive Sell Offer",
+    "query": "?type=createPassiveSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "createPassiveSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAAAAAAAA"
+  },
+  {
+    "name": "Create Passive Sell Offer (syntactic sugar)",
+    "query": "?type=createPassiveSellOffer&buying=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "createPassiveSellOffer",
+          "buying": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "price": "1.1",
+          "selling": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAJBU1NFVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAsAAAAKAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Data (set)",
+    "query": "?type=manageData&name=hello&value=Hello_World!",
+    "params": {
+      "operations": [
+        {
+          "type": "manageData",
+          "name": "hello",
+          "value": {
+            "type": "text",
+            "value": "Hello_World!"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAAxIZWxsb19Xb3JsZCEAAAAAAAAAAA=="
+  },
+  {
+    "name": "Manage Data (set, binary)",
+    "query": "?type=manageData&name=hello&value=BASE64",
+    "params": {
+      "operations": [
+        {
+          "type": "manageData",
+          "name": "hello",
+          "value": {
+            "type": "text",
+            "value": "BASE64"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAAZCQVNFNjQAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Manage Data (set, binary/NULL)",
+    "query": "?type=manageData&name=hello&value=AAA",
+    "params": {
+      "operations": [
+        {
+          "type": "manageData",
+          "name": "hello",
+          "value": {
+            "type": "text",
+            "value": "AAA"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAANBQUEAAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Data (unset)",
+    "query": "?type=manageData&name=hello&value=",
+    "params": {
+      "operations": [
+        {
+          "type": "manageData",
+          "name": "hello",
+          "value": ""
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Manage Buy Offer (create)",
+    "query": "?type=manageBuyOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&buyAmount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageBuyOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "buyAmount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Buy Offer (create, syntactic sugar)",
+    "query": "?type=manageBuyOffer&buying=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&buyAmount=10.1&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageBuyOffer",
+          "buying": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "buyAmount": "10.1",
+          "price": "1.1",
+          "selling": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAAAAAAAJBU1NFVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAsAAAAKAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Manage Buy Offer (edit)",
+    "query": "?type=manageBuyOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&buyAmount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1&offerId=1234567890",
+    "params": {
+      "operations": [
+        {
+          "type": "manageBuyOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "buyAmount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1",
+          "offerId": "1234567890"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Buy Offer (remove)",
+    "query": "?type=manageBuyOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&buyAmount=0&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1&offerId=1234567890",
+    "params": {
+      "operations": [
+        {
+          "type": "manageBuyOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "buyAmount": "0",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1",
+          "offerId": "1234567890"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Buy Offer (remove, syntactic sugar)",
+    "query": "?type=manageBuyOffer&buyAmount=0&offerId=1234567890",
+    "queryConverted": "?type=manageBuyOffer&buyAmount=0&offerId=1234567890&buying=XLM:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageBuyOffer",
+          "buyAmount": "0",
+          "offerId": "1234567890",
+          "buying": {
+            "code": "XLM",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1",
+          "selling": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAMAAAAAAAAAAFYTE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Offer (backward compatibility)",
+    "query": "?type=manageOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "queryConverted": "?type=manageSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Sell Offer (create)",
+    "query": "?type=manageSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Sell Offer (create, syntactic sugar)",
+    "query": "?type=manageSellOffer&buying=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&price=1.1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "buying": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "price": "1.1",
+          "selling": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAAAAAAJBU1NFVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAsAAAAKAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Manage Sell Offer (edit)",
+    "query": "?type=manageSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1.1&offerId=1234567890",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1.1",
+          "offerId": "1234567890"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYFI0AAAAALAAAACgAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Sell Offer (remove)",
+    "query": "?type=manageSellOffer&buying=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=0&selling=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1&offerId=1234567890",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "buying": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "0",
+          "selling": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1",
+          "offerId": "1234567890"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQkNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Manage Sell Offer (remove, syntactic sugar)",
+    "query": "?type=manageSellOffer&amount=0&offerId=1234567890",
+    "queryConverted": "?type=manageSellOffer&amount=0&offerId=1234567890&buying=XLM:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&price=1",
+    "params": {
+      "operations": [
+        {
+          "type": "manageSellOffer",
+          "amount": "0",
+          "offerId": "1234567890",
+          "buying": {
+            "code": "XLM",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "price": "1",
+          "selling": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAAAAAAFYTE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAABJlgLSAAAAAAAAAAA="
+  },
+  {
+    "name": "Path Payment (backward compatibility)",
+    "query": "?type=pathPayment&sendAsset=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendMax=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAsset=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAmount=10.1",
+    "queryConverted": "?type=pathPaymentStrictReceive&sendAsset=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendMax=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAsset=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAmount=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictReceive",
+          "sendAsset": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendMax": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destAsset": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "destAmount": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAUFCQ0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBQkNERUZHSElKS0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Path Payment Strict Receive (no path)",
+    "query": "?type=pathPaymentStrictReceive&sendAsset=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendMax=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAsset=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAmount=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictReceive",
+          "sendAsset": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendMax": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destAsset": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "destAmount": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAUFCQ0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBQkNERUZHSElKS0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Path Payment Strict Receive (1 asset path)",
+    "query": "?type=pathPaymentStrictReceive&sendAsset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendMax=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAmount=10.1&path=ASSET1:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictReceive",
+          "sendAsset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendMax": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destAmount": "10.1",
+          "path": [
+            {
+              "code": "ASSET1",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            }
+          ],
+          "destAsset": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAQAAAAJBU1NFVDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Path Payment Strict Receive (5 asset path)",
+    "query": "?type=pathPaymentStrictReceive&sendAsset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendMax=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAmount=10.1&path=ASSET1:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET2:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET3:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET4:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET5:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictReceive",
+          "sendAsset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendMax": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destAmount": "10.1",
+          "path": [
+            {
+              "code": "ASSET1",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET2",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET3",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET4",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET5",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            }
+          ],
+          "destAsset": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAABQAAAAJBU1NFVDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQVNTRVQyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBU1NFVDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQVNTRVQ1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Path Payment Strict Send (no path)",
+    "query": "?type=pathPaymentStrictSend&sendAsset=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendAmount=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destAsset=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destMin=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictSend",
+          "sendAsset": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendAmount": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destAsset": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "destMin": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAANAAAAAUFCQ0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBQkNERUZHSElKS0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Path Payment Strict Send (1 asset path)",
+    "query": "?type=pathPaymentStrictSend&sendAsset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendAmount=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destMin=10.1&path=ASSET1:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictSend",
+          "sendAsset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendAmount": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destMin": "10.1",
+          "path": [
+            {
+              "code": "ASSET1",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            }
+          ],
+          "destAsset": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAANAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAQAAAAJBU1NFVDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Path Payment Strict Send (5 asset path)",
+    "query": "?type=pathPaymentStrictSend&sendAsset=ASSET:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&sendAmount=10.1&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&destMin=10.1&path=ASSET1:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET2:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET3:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET4:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF,ASSET5:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "pathPaymentStrictSend",
+          "sendAsset": {
+            "code": "ASSET",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "sendAmount": "10.1",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "destMin": "10.1",
+          "path": [
+            {
+              "code": "ASSET1",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET2",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET3",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET4",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            },
+            {
+              "code": "ASSET5",
+              "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+            }
+          ],
+          "destAsset": {
+            "code": "XLM"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAANAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAABQAAAAJBU1NFVDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQVNTRVQyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBU1NFVDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQVNTRVQ1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Payment (XLM)",
+    "query": "?type=payment&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&asset=XLM&amount=10.1",
+    "queryConverted": "?type=payment&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "payment",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "asset": {
+            "code": "XLM"
+          },
+          "amount": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAA="
+  },
+  {
+    "name": "Payment (asset 4)",
+    "query": "?type=payment&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&asset=ABCD:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "payment",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "asset": {
+            "code": "ABCD",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFCQ0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUjQAAAAAAAAAAA"
+  },
+  {
+    "name": "Payment (asset 12)",
+    "query": "?type=payment&destination=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&asset=ABCDEFGHIJKL:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&amount=10.1",
+    "params": {
+      "operations": [
+        {
+          "type": "payment",
+          "destination": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "asset": {
+            "code": "ABCDEFGHIJKL",
+            "issuer": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          },
+          "amount": "10.1"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFCQ0RFRkdISUpLTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBSNAAAAAAAAAAAA="
+  },
+  {
+    "name": "Set Options (noop)",
+    "query": "?type=setOptions",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Set Options (custom source)",
+    "query": "?type=setOptions&source=tips*cosmic.plus",
+    "params": {
+      "source": "tips*cosmic.plus",
+      "operations": [
+        {
+          "type": "setOptions"
+        }
+      ]
+    },
+    "xdr": "AAAAANkmGN7rajfNBCpRNZv2cgWZKrLDb89eBxt8BoTSc46qAAAAZAACPekAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Set Options (set homeDomain)",
+    "query": "?type=setOptions&homeDomain=example.org",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "homeDomain": "example.org"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAALZXhhbXBsZS5vcmcAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (unset homeDomain)",
+    "query": "?type=setOptions&homeDomain=",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "homeDomain": ""
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (clear one flag)",
+    "query": "?type=setOptions&clearFlags=3",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "clearFlags": "3"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAEAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (clear all flags)",
+    "query": "?type=setOptions&clearFlags=7",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "clearFlags": "7"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAEAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (set one flag)",
+    "query": "?type=setOptions&setFlags=3",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "setFlags": "3"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (set all flags)",
+    "query": "?type=setOptions&setFlags=7",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "setFlags": "7"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAABAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (set master key weight)",
+    "query": "?type=setOptions&masterWeight=20",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "masterWeight": "20"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAQAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (revoke master key)",
+    "query": "?type=setOptions&masterWeight=0",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "masterWeight": "0"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Option (set thresholds)",
+    "query": "?type=setOptions&lowThreshold=1&medThreshold=5&highThreshold=8",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "lowThreshold": "1",
+          "medThreshold": "5",
+          "highThreshold": "8"
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAUAAAABAAAACAAAAAAAAAAAAAAAAAAAAAA="
+  },
+  {
+    "name": "Set Options (set pubkey signer)",
+    "query": "?type=setOptions&signer=20:key:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "20",
+            "type": "key",
+            "value": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (unset pubkey signer)",
+    "query": "?type=setOptions&signer=0:key:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "0",
+            "type": "key",
+            "value": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (set hash signer)",
+    "query": "?type=setOptions&signer=20:hash:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "20",
+            "type": "hash",
+            "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgoKnypncpQlV6tTVddq9EL49l4BCgqfKmdylCVXq1NVAAAAFAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (unset hash signer)",
+    "query": "?type=setOptions&signer=0:hash:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "0",
+            "type": "hash",
+            "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgoKnypncpQlV6tTVddq9EL49l4BCgqfKmdylCVXq1NVAAAAAAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (set tx signer)",
+    "query": "?type=setOptions&signer=20:tx:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "20",
+            "type": "tx",
+            "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQoKnypncpQlV6tTVddq9EL49l4BCgqfKmdylCVXq1NVAAAAFAAAAAAAAAAA"
+  },
+  {
+    "name": "Set Options (unset tx signer)",
+    "query": "?type=setOptions&signer=0:tx:0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355",
+    "params": {
+      "operations": [
+        {
+          "type": "setOptions",
+          "signer": {
+            "weight": "0",
+            "type": "tx",
+            "value": "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
+          }
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQoKnypncpQlV6tTVddq9EL49l4BCgqfKmdylCVXq1NVAAAAAAAAAAAAAAAA"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "cosmic-plus-tx-params",
+  "description": "Stellar transactions parsing, conversion and description",
+  "authors": [
+    "MisterTicot"
+  ],
+  "homepage": "https://cosmic.plus/#view:js-tx-params",
+  "licence": "MIT",
+  "keywords": [
+    "stellar",
+    "transaction",
+    "request",
+    "CosmicLink",
+    "browser",
+    "node"
+  ],
+  "main": "tx-params.js",
+  "ignore": [
+    ".*",
+    "package-lock.json"
+  ],
+  "dependencies": {}
+}
