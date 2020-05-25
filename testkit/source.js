@@ -184,11 +184,11 @@ const data = [
   },
   {
     name: "Manage Data (set, binary)",
-    query: `?type=manageData&name=${name}&value=${base64}`
+    query: `?type=manageData&name=${name}&value=base64:${base64}`
   },
   {
     name: "Manage Data (set, binary/NULL)",
-    query: `?type=manageData&name=${name}&value=${base64WithNull}`
+    query: `?type=manageData&name=${name}&value=base64:${base64WithNull}`
   },
   {
     name: "Manage Data (unset)",

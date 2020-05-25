@@ -479,37 +479,37 @@
   },
   {
     "name": "Manage Data (set, binary)",
-    "query": "?type=manageData&name=hello&value=BASE64",
+    "query": "?type=manageData&name=hello&value=base64:BASE64",
     "params": {
       "operations": [
         {
           "type": "manageData",
           "name": "hello",
           "value": {
-            "type": "text",
+            "type": "base64",
             "value": "BASE64"
           }
         }
       ]
     },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAAZCQVNFNjQAAAAAAAAAAAAA"
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAAQEBITrAAAAAAAAAAA="
   },
   {
     "name": "Manage Data (set, binary/NULL)",
-    "query": "?type=manageData&name=hello&value=AAA",
+    "query": "?type=manageData&name=hello&value=base64:AAA",
     "params": {
       "operations": [
         {
           "type": "manageData",
           "name": "hello",
           "value": {
-            "type": "text",
+            "type": "base64",
             "value": "AAA"
           }
         }
       ]
     },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAANBQUEAAAAAAAAAAAA="
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAKAAAABWhlbGxvAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAA="
   },
   {
     "name": "Manage Data (unset)",
