@@ -3,7 +3,6 @@
 • [Contributing](https://cosmic.plus/#view:js-tx-params/CONTRIBUTING)
 • [Changelog](https://cosmic.plus/#view:js-tx-params/CHANGELOG)
 
-
 # Readme
 
 ![Licence](https://img.shields.io/github/license/cosmic-plus/js-tx-params.svg)
