@@ -10,7 +10,7 @@ const normalize = {}
 
 normalize.txAfter = function (tx) {
   // TODO: move to deconstruct.
-  const minFee = 100 * tx.operations.length
+  const minFee = String(100 * tx.operations.length)
   if (tx.fee === minFee) delete tx.fee
 
   if (tx.network === "public" || tx.network === "test") {

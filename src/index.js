@@ -5,7 +5,7 @@
 const TxParams = require("./model/tx-params")
 
 /* Protocol */
-TxParams.setSpecs(require("./protocol/v12"))
+TxParams.setSpecs(require("./protocol/v13"))
 
 /* Actions */
 TxParams.setAction("check", require("./action/check"))
