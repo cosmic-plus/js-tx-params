@@ -125,6 +125,15 @@ decode.assetPath = function (assetsList) {
   return assetsList.split(",").map(decode.asset)
 }
 
+decode.authorizeFlag = function (flag) {
+  if (!isNaN(+flag)) {
+    return +flag
+  } else {
+    // Backward compatibility. (protocol =< 12)
+    return decode.boolean(flag)
+  }
+}
+
 encode.boolean = function (boolean) {
   if (boolean === false) return "false"
 }

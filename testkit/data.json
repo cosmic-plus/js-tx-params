@@ -270,35 +270,81 @@
     "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   },
   {
-    "name": "Allow Trust (authorize)",
-    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=true",
-    "queryConverted": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET",
+    "name": "Allow Trust (revoke)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=0",
     "params": {
       "operations": [
         {
           "type": "allowTrust",
           "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
           "assetCode": "ASSET",
-          "authorize": true
+          "authorize": 0
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Allow Trust (authorize)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=1",
+    "params": {
+      "operations": [
+        {
+          "type": "allowTrust",
+          "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "assetCode": "ASSET",
+          "authorize": 1
         }
       ]
     },
     "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAEAAAAAAAAAAA=="
   },
   {
-    "name": "Allow Trust (revoke)",
-    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=false",
+    "name": "Allow Trust (liability)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=2",
     "params": {
       "operations": [
         {
           "type": "allowTrust",
           "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
           "assetCode": "ASSET",
-          "authorize": false
+          "authorize": 2
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAIAAAAAAAAAAA=="
+  },
+  {
+    "name": "Allow Trust (revoke, backward compatibility)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=false",
+    "queryConverted": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=0",
+    "params": {
+      "operations": [
+        {
+          "type": "allowTrust",
+          "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "assetCode": "ASSET",
+          "authorize": 0
         }
       ]
     },
     "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+    "name": "Allow Trust (authorize, backward compatibility)",
+    "query": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=true",
+    "queryConverted": "?type=allowTrust&trustor=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF&assetCode=ASSET&authorize=1",
+    "params": {
+      "operations": [
+        {
+          "type": "allowTrust",
+          "trustor": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+          "assetCode": "ASSET",
+          "authorize": 1
+        }
+      ]
+    },
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkFTU0VUAAAAAAAAAAAAAAEAAAAAAAAAAA=="
   },
   {
     "name": "Bump Sequence",

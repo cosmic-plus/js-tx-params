@@ -37,7 +37,9 @@ encode.opAfter = function (op) {
   case "accountMerge":
     return `Merge account inside ${op.destination}`
   case "allowTrust":
-    if (op.authorize) {
+    if (op.authorize === 2) {
+      return `Allow liabilities for your asset ${op.assetCode} to ${op.trustor}`
+    } else if (op.authorize === 1) {
       return `Allow ${op.trustor} to use your asset ${op.assetCode}`
     } else {
       return `Forbid ${op.trustor} to use your asset ${op.assetCode}`

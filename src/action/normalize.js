@@ -51,8 +51,8 @@ normalize.opAfter = function (op, tx) {
 
   switch (op.type) {
   case "allowTrust":
-    // Allow trust by default.
-    if (op.authorize === undefined) op.authorize = true
+    // Allow trust by default. (CosmicLink backward compatibility)
+    if (op.authorize === undefined) op.authorize = 1
     break
   case "createPassiveSellOffer":
   case "manageBuyOffer":
@@ -87,6 +87,17 @@ normalize.opAfter = function (op, tx) {
 
 normalize.amount = function (amount) {
   return String(amount)
+}
+
+normalize.authorizeFlag = function (flag) {
+  // Backward compatibility (protocol =< 12)
+  if (flag === false) {
+    return 0
+  } else if (flag === true) {
+    return 1
+  } else {
+    return flag
+  }
 }
 
 normalize.date = function (date) {

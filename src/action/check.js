@@ -8,6 +8,7 @@ const $status = require("../lib/status")
 
 /* Constants */
 
+const AUTHORIZE_FLAG_MAX = 2
 const FEE_MAX = Math.pow(2, 32)
 const FLAGS_MAX = 7
 const WEIGHT_MAX = 255
@@ -91,6 +92,12 @@ check.asset = function (asset, ctx) {
 
 check.assetPath = function (assetPath, ctx) {
   return assetPath.map(asset => check.asset(asset, ctx))
+}
+
+check.authorizeFlag = function (flag, ctx) {
+  return (
+    checkInteger(ctx, flag, "authorize flag", 0, AUTHORIZE_FLAG_MAX) || flag
+  )
 }
 
 check.boolean = function (boolean, ctx) {

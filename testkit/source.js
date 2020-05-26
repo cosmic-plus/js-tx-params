@@ -122,13 +122,27 @@ const data = [
 
   /* Allow Trust */
   {
-    name: "Allow Trust (authorize)",
-    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=true`,
-    queryConverted: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}`
+    name: "Allow Trust (revoke)",
+    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=0`
   },
   {
-    name: "Allow Trust (revoke)",
-    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=false`
+    name: "Allow Trust (authorize)",
+    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=1`
+  },
+  {
+    name: "Allow Trust (liability)",
+    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=2`
+  },
+
+  {
+    name: "Allow Trust (revoke, backward compatibility)",
+    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=false`,
+    queryConverted: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=0`
+  },
+  {
+    name: "Allow Trust (authorize, backward compatibility)",
+    query: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=true`,
+    queryConverted: `?type=allowTrust&trustor=${pubkey}&assetCode=${assetCode}&authorize=1`
   },
 
   /* Bump Sequence */
