@@ -30,9 +30,12 @@ decode.txBefore = function (tx, sdkTx, options = {}) {
     }
   }
 
+  if (sdkTx.timeBounds) {
+    tx.minTime = sdkTx.timeBounds.minTime
+    tx.maxTime = sdkTx.timeBounds.maxTime
+  }
+
   tx.memo = sdkTx._memo
-  tx.minTime = sdkTx.timeBounds.minTime
-  tx.maxTime = sdkTx.timeBounds.maxTime
   tx.fee = sdkTx.fee
   tx.operations = sdkTx.operations
 
