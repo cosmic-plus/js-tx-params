@@ -68,7 +68,7 @@ normalize.opAfter = function (op, tx) {
     break
   case "manageData":
     // Delete data entry.
-    if (!op.value) op.value = ""
+    if (!op.value) op.value = { type: "text", value: "" }
     break
   case "pathPaymentStrictReceive":
   case "pathPaymentStrictSend":

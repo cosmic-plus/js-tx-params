@@ -565,7 +565,10 @@
         {
           "type": "manageData",
           "name": "hello",
-          "value": ""
+          "value": {
+            "type": "text",
+            "value": ""
+          }
         }
       ]
     },

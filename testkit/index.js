@@ -70,6 +70,13 @@ Testkit.generate.promise = async function (tx) {
     tx.params.maxTime += "-01-01"
   }
 
+  // Special case: manageData unset entry.
+  tx.params.operations.forEach(op => {
+    if (op.type === "manageData" && op.value === "") {
+      op.value = { type: "text", value: "" }
+    }
+  })
+
   // Generate XDR
   if (!tx.noXdr) {
     await cosmicLink.lock({ network: "test" })
