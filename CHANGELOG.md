@@ -19,6 +19,21 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.0.0-beta.2 - 2020-05-31
+
+### Added
+
+- Logic: Add support for the new `authorize` flag (protocol v13).
+
+### Changed
+
+- Logic: Switch to Stellar protocol 13.
+
+### Fixed
+
+- Logic: Fix `manageData` operation conversion.
+- Logic: Fix StellarSdk Transaction timeBounds decoding.
+
 ## 1.0.0-beta.1 - 2020-05-11
 
 Initial release.
