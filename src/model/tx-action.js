@@ -2,7 +2,7 @@
 /**
  * TxParams.Action
  */
-const { xeach } = require("@kisbox/helpers/compat/function")
+const { xeach } = require("@kisbox/helpers")
 
 /* Definition */
 

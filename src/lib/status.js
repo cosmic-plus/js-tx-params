@@ -2,8 +2,7 @@
 /**
  * $status utility
  */
-const { $util } = require("@kisbox/helpers/compat/meta")
-const { wrap } = require("@kisbox/helpers/compat/object")
+const { $util, wrap } = require("@kisbox/helpers")
 
 /* Configuration */
 

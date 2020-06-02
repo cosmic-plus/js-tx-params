@@ -2,7 +2,7 @@
 /**
  * TxParams Format: Query
  */
-const { xmap } = require("@kisbox/helpers/compat/function")
+const { xmap } = require("@kisbox/helpers")
 
 const Parameters = require("../lib/parameters")
 const $status = require("../lib/status")
