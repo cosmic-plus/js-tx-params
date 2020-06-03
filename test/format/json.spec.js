@@ -1,7 +1,7 @@
 /* eslint-env jasmine */
 "use strict"
 
-const TxRequest = require("../../src")
+const TxParams = require("../../src")
 // const test = require("../data-loader")
 const Testkit = require("../../testkit")
 
@@ -17,8 +17,8 @@ describe("Json format", () => {
 
 /* Callbacks */
 function encode (params) {
-  return new TxRequest(params).to("json")
+  return new TxParams(params).to("json")
 }
 function decode (query) {
-  return TxRequest.from("json", query)
+  return TxParams.from("json", query)
 }

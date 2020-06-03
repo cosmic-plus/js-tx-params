@@ -22,6 +22,6 @@ function decode (xdr) {
   const transaction = new StellarSdk.Transaction(xdr, passphrase)
 
   const options = { stripNeutralSource: true }
-  const tx = TxParams.from("transaction", transaction, options)
-  return JSON.stringify(tx, null, 2)
+  const txParams = TxParams.from("transaction", transaction, options)
+  return txParams.to("json")
 }
