@@ -25,8 +25,8 @@ encode.txAfter = function (tx) {
   } else {
     type = "transaction"
     opsParams = xmap(tx.operations, ([type, params]) => {
-      if (!params.length) return `op=${type}`
-      else return `op=${type}&${params}`
+      if (!params.length) return `operation=${type}`
+      else return `operation=${type}&${params}`
     }).join("&")
   }
 
