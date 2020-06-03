@@ -17,7 +17,10 @@ encode.txAfter = function (tx) {
   let query = "?"
 
   let type, opsParams
-  if (tx.operations.length === 1) {
+  if (
+    tx.operations.length === 1
+    && !tx.operations[0][1].match(/(^|&)source=/)
+  ) {
     [type, opsParams] = tx.operations[0]
   } else {
     type = "transaction"
