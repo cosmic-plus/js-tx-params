@@ -42,6 +42,13 @@ decode.txBefore = function (tx, sdkTx, options = {}) {
   return tx
 }
 
+decode.txAfter = function (tx) {
+  // Move operations to the end of the object
+  const operations = tx.operations
+  delete tx.operations
+  tx.operations = operations
+}
+
 /* Rules: operations */
 
 decode.opBefore = function (sdkOp) {
