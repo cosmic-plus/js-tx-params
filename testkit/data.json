@@ -1103,16 +1103,16 @@
   },
   {
     "name": "Set Options (custom source)",
-    "query": "?type=setOptions&source=tips*cosmic.plus",
+    "query": "?type=transaction&operation=setOptions&source=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
     "params": {
-      "source": "tips*cosmic.plus",
       "operations": [
         {
-          "type": "setOptions"
+          "type": "setOptions",
+          "source": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF"
         }
       ]
     },
-    "xdr": "AAAAANkmGN7rajfNBCpRNZv2cgWZKrLDb89eBxt8BoTSc46qAAAAZAACPekAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
   },
   {
     "name": "Set Options (set homeDomain)",

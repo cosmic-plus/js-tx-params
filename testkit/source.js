@@ -315,7 +315,7 @@ const data = [
   },
   {
     name: "Set Options (custom source)",
-    query: `?type=setOptions&source=tips*cosmic.plus`
+    query: `?type=transaction&operation=setOptions&source=${pubkey}`
   },
 
   // Misc
