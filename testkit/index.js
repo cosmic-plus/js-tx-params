@@ -3,6 +3,7 @@
  * TxParams TestKit
  */
 const { CosmicLink } = require("cosmic-lib")
+const equal = require("fast-deep-equal")
 const $status = require("../src/lib/status")
 
 /* Definition */
@@ -30,10 +31,16 @@ class Testkit extends Array {
 
     this.forEach(tx => {
       testCount++
+
       try {
         const actual = converter(tx[inputFmt])
         const reference = tx[`${outputFmt}Converted`] || tx[outputFmt]
-        if (!tx.noConversion && actual !== reference) {
+        const isEqual =
+          outputFmt === "json"
+            ? equal(JSON.parse(actual), JSON.parse(reference))
+            : actual === reference
+
+        if (!tx.noConversion && !isEqual) {
           throw new Error(`Expected: ${reference}\nReceived: ${actual}`)
         }
       } catch (error) {
