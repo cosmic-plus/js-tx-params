@@ -123,8 +123,10 @@ decode.sequence = function (sequence) {
   return sequence.toString()
 }
 
-decode.signer = function (conf, sdkSigner) {
-  const signer = { weight: sdkSigner.weight }
+decode.signer = function (sdkSigner) {
+  const signer = {
+    weight: decode.weight(sdkSigner.weight)
+  }
   if (sdkSigner.ed25519PublicKey) {
     signer.type = "key"
     signer.value = sdkSigner.ed25519PublicKey
