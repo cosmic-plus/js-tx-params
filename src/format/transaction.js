@@ -97,6 +97,8 @@ decode.date = function (timestamp) {
   return new Date(Number(timestamp) * 1000).toISOString()
 }
 
+decode.flags = String
+
 decode.memo = function (sdkMemo) {
   if (sdkMemo._switch.name === "memoNode") return
 
@@ -135,6 +137,10 @@ decode.signer = function (conf, sdkSigner) {
   }
   return signer
 }
+
+decode.threshold = String
+
+decode.weight = String
 
 /* Export */
 module.exports = { decode }
