@@ -36,6 +36,10 @@ const data = [
     query: `?type=${noop}&source=${pubkey}`
   },
   {
+    name: "Source+Sequence",
+    query: `?type=${noop}&source=${pubkey}&sequence=100`
+  },
+  {
     name: "Fee",
     query: `?type=${noop}&fee=500`
   },
