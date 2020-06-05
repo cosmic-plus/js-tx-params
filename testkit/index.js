@@ -33,8 +33,11 @@ class Testkit extends Array {
       testCount++
 
       try {
-        const actual = converter(tx[inputFmt])
+        const input = tx[inputFmt]
         const reference = tx[`${outputFmt}Converted`] || tx[outputFmt]
+        if (!input || !reference) return
+
+        const actual = converter(input, tx)
         const isEqual =
           outputFmt === "json"
             ? equal(JSON.parse(actual), JSON.parse(reference))

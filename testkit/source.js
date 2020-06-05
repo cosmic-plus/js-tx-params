@@ -102,7 +102,8 @@ const data = [
   /* Meta-parameters */
   {
     name: "Network",
-    query: `?type=${noop}&network=test`
+    query: `?type=${noop}&network=test`,
+    noXdr: true
   },
   {
     name: "Horizon",
@@ -111,7 +112,8 @@ const data = [
   },
   {
     name: "Callback",
-    query: `?type=${noop}&callback=${domain}`
+    query: `?type=${noop}&callback=${domain}`,
+    noXdr: true
   },
 
   /* Account Merge */

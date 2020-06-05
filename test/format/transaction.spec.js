@@ -17,11 +17,15 @@ describe("Transaction format", () => {
 })
 
 /* Callbacks */
-function decode (xdr) {
+function decode (xdr, tx) {
   const passphrase = StellarSdk.Networks.TESTNET
   const transaction = new StellarSdk.Transaction(xdr, passphrase)
 
-  const options = { stripNeutralSource: true }
+  const options = { stripNeutralSource: !tx.params.source }
   const txParams = TxParams.from("transaction", transaction, options)
+  if (tx.params.source && !tx.params.sequence) {
+    delete txParams.sequence
+  }
+
   return txParams.to("json")
 }

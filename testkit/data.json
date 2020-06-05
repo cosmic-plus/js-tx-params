@@ -219,6 +219,7 @@
   {
     "name": "Network",
     "query": "?type=setOptions&network=test",
+    "noXdr": true,
     "params": {
       "network": "test",
       "operations": [
@@ -226,8 +227,7 @@
           "type": "setOptions"
         }
       ]
-    },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    }
   },
   {
     "name": "Horizon",
@@ -246,6 +246,7 @@
   {
     "name": "Callback",
     "query": "?type=setOptions&callback=example.org",
+    "noXdr": true,
     "params": {
       "callback": "https://example.org",
       "operations": [
@@ -253,8 +254,7 @@
           "type": "setOptions"
         }
       ]
-    },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    }
   },
   {
     "name": "Account Merge",
