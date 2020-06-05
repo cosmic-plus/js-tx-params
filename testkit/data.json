@@ -43,11 +43,11 @@
   },
   {
     "name": "Memo/text (binary)",
-    "query": "?type=setOptions&memo=base64:BASE64",
+    "query": "?type=setOptions&memo=base64:BOOM",
     "params": {
       "memo": {
         "type": "base64",
-        "value": "BASE64"
+        "value": "BOOM"
       },
       "operations": [
         {
@@ -55,7 +55,7 @@
         }
       ]
     },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAEAAAAEBASE6wAAAAEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAEAAAADBOOMAAAAAAEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "name": "Memo/text (binary/NULL)",
@@ -525,7 +525,7 @@
   },
   {
     "name": "Manage Data (set, binary)",
-    "query": "?type=manageData&name=hello&value=base64:BASE64",
+    "query": "?type=manageData&name=hello&value=base64:BOOM",
     "params": {
       "operations": [
         {
@@ -533,12 +533,12 @@
           "name": "hello",
           "value": {
             "type": "base64",
-            "value": "BASE64"
+            "value": "BOOM"
           }
         }
       ]
     },
-    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAoAAAAFaGVsbG8AAAAAAAABAAAABAQEhOsAAAAAAAAAAA=="
+    "xdr": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAoAAAAFaGVsbG8AAAAAAAABAAAAAwTjjAAAAAAAAAAAAA=="
   },
   {
     "name": "Manage Data (set, binary/NULL)",

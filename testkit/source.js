@@ -7,7 +7,7 @@
 
 const amount = "10.1"
 const assetCode = "ASSET"
-const base64 = "BASE64"
+const base64 = "BOOM"
 const base64WithNull = "AAA"
 const domain = "example.org"
 const hash = "0a0a9f2a6772942557ab5355d76af442f8f65e010a0a9f2a6772942557ab5355"
