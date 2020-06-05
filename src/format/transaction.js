@@ -57,6 +57,7 @@ decode.opBefore = function (sdkOp) {
     op.asset = op.line
     delete op.line
   }
+  return op
 }
 
 /* Rules: fields */
