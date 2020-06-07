@@ -1,6 +1,6 @@
 {
   "name": "@cosmic-plus/tx-params",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Stellar transactions parsing, conversion and description",
   "author": "MisterTicot <mister.ticot@cosmic.plus>",
   "homepage": "https://cosmic.plus/#view:js-tx-params",
