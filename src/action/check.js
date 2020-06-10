@@ -2,7 +2,7 @@
 /**
  * Check TxParams
  */
-const misc = require("@cosmic-plus/jsutils/es5/misc")
+const { shorter, isBase64, isUtf8 } = require("@cosmic-plus/helpers")
 
 const $status = require("../lib/status")
 
@@ -68,7 +68,7 @@ check.amount = function (amount, ctx) {
 
 check.address = function (address, ctx) {
   if (!address.match(PUBKEY_REGEXP) && !address.match(FEDERATED_REGEXP)) {
-    const short = misc.shorter(address)
+    const short = shorter(address)
     return error(ctx, `Invalid address: ${short}`)
   }
   return address
@@ -230,13 +230,13 @@ function checkNumber (ctx, value, type, min, max) {
 }
 
 function checkUtf8 (ctx, value) {
-  if (typeof value !== "string" || !misc.isUtf8(value)) {
+  if (typeof value !== "string" || !isUtf8(value)) {
     return error(ctx, `Invalid UTF8 string: ${value}`)
   }
 }
 
 function checkBase64 (ctx, value) {
-  if (typeof value !== "string" || !misc.isBase64(value)) {
+  if (typeof value !== "string" || !isBase64(value)) {
     return error(ctx, `Invalid base64 string: ${value}`)
   }
 }

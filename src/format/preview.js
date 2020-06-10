@@ -2,8 +2,8 @@
 /**
  * Short text preview
  */
-const nice = require("@cosmic-plus/jsutils/es5/nice")
-const misc = require("@cosmic-plus/jsutils/es5/misc")
+const { nice } = require("@cosmic-plus/utils")
+const { shorter } = require("@cosmic-plus/helpers")
 const aliases = require("@cosmic-plus/base/es5/aliases")
 
 /* Definition */
@@ -152,7 +152,7 @@ ${op.buyAmount} ${op.buying} at ${op.price} ${op.buying} / unit`
 
 /* Rules: fields */
 encode.address = function (address) {
-  return aliases.all[address] || misc.shorter(address)
+  return aliases.all[address] || shorter(address)
 }
 
 encode.asset = function (asset) {

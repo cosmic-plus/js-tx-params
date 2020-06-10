@@ -2,7 +2,7 @@
 /**
  * TxParams format: SDK Transaction
  */
-const misc = require("@cosmic-plus/jsutils/es5/misc")
+const { isUtf8 } = require("@cosmic-plus/helpers")
 
 /* Definition */
 const decode = {}
@@ -85,7 +85,7 @@ decode.buffer = function (buffer) {
   if (!buffer) return null
 
   const string = buffer.toString()
-  if (misc.isUtf8(string)) {
+  if (isUtf8(string)) {
     return { type: "text", value: string }
   } else {
     const value = buffer.toString("base64").replace(/=*$/, "")
