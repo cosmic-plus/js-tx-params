@@ -1,6 +1,6 @@
 {
   "name": "@cosmic-plus/tx-params",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "Stellar transactions parsing, conversion and description",
   "author": "MisterTicot <mister.ticot@cosmic.plus>",
   "homepage": "https://cosmic.plus/#view:js-tx-params",
@@ -64,8 +64,8 @@
     "@cosmic-plus/base": "^2.8.0",
     "@cosmic-plus/helpers": "^1.0.0",
     "@cosmic-plus/utils": "^1.0.0",
-    "@kisbox/helpers": "^1.0.0-beta.10",
-    "@kisbox/model": "^1.0.0-beta.10",
-    "@kisbox/utils": "^1.0.0-beta.10"
+    "@kisbox/helpers": "^1.0.0-beta.11",
+    "@kisbox/model": "^1.0.0-beta.11",
+    "@kisbox/utils": "^1.0.0-beta.11"
   }
 }
