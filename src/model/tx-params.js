@@ -9,7 +9,7 @@ class TxParams {
   static from (type, data, options) {
     const format = this.getFormat(type)
     const txParams = format.decode.transaction(new this(), data, options)
-    txParams.parse()
+    txParams.normalize()
     return txParams
   }
 

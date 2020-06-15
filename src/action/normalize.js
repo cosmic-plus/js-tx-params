@@ -7,8 +7,13 @@
 const normalize = {}
 
 /* Rules: transaction */
+normalize.txBefore = function (tx) {
+  removeEmptyFields(tx)
+}
 
 normalize.txAfter = function (tx) {
+  if (!tx.operations) tx.operations = []
+
   // TODO: move to deconstruct.
   const minFee = String(100 * tx.operations.length)
   if (tx.fee === minFee) delete tx.fee
@@ -23,6 +28,8 @@ normalize.txAfter = function (tx) {
 /* Rules: operations */
 
 normalize.opBefore = function (op) {
+  removeEmptyFields(op)
+
   switch (op.type) {
   case "createPassiveOffer":
     op.type = "createPassiveSellOffer"
@@ -129,6 +136,15 @@ normalize.url = function (url) {
 
 normalize.weight = function (amount) {
   return String(amount)
+}
+
+/* Helpers */
+function removeEmptyFields (object) {
+  for (let field in object) {
+    if (object[field] == null) {
+      delete object[field]
+    }
+  }
 }
 
 /* Export */
