@@ -2,15 +2,20 @@
 /**
  * TxParams - Extensible Stellar transactions manipulation
  */
+const { type } = require("@kisbox/utils")
 
 /* Definition */
 
 class TxParams {
-  static from (type, data, options) {
-    const format = this.getFormat(type)
-    const txParams = format.decode.transaction(new this(), data, options)
-    txParams.normalize()
-    return txParams
+  static from (formatId, data, options) {
+
+    const format = this.getFormat(formatId)
+    const decoded = format.decode.transaction(new this(), data, options)
+
+    return sync(decoded, txParams => {
+      txParams.normalize()
+      return txParams
+    })
   }
 
   constructor (params) {
@@ -77,6 +82,16 @@ TxParams.setAction = function (name, rules) {
 
 TxParams.setFormat = function (name, rules) {
   this.formats[name] = new TxParams.Format(rules)
+}
+
+/* Helpers */
+
+function sync (value, callback) {
+  if (type(value) === "promise") {
+    return value.then(x => callback(x))
+  } else {
+    return callback(value)
+  }
 }
 
 /* Export */
