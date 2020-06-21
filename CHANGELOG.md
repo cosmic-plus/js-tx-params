@@ -19,6 +19,19 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.0.0-beta.5 - 2020-06-21
+
+### Added
+
+- API: `new TxParams()` accepts query & StellarSdk formatted values. For
+  example, an `asset` field will either accepts `"code:issuer"` or `{ code, issuer }`.
+- Logic: Add partial support for asynchrous format conversion.
+- Meta: Add polyfilling.
+
+### Changed
+
+- Logic: Move some logic from parse() to normalize().
+
 ## 1.0.0-beta.4 - 2020-06-14
 
 ### Changed

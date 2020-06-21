@@ -8,7 +8,6 @@ const { type } = require("@kisbox/utils")
 
 class TxParams {
   static from (formatId, data, options) {
-
     const format = this.getFormat(formatId)
     const decoded = format.decode.transaction(new this(), data, options)
 
