@@ -2,6 +2,7 @@
 /**
  * TxParams format: SDK Transaction
  */
+const { wrap } = require("@kisbox/helpers")
 const { isUtf8 } = require("@cosmic-plus/helpers")
 
 /* Definition */
@@ -11,7 +12,7 @@ const decode = {}
 
 decode.txBefore = function (tx, sdkTx, options = {}) {
   // Prevent parameters pollution
-  if (options) options = Object.create(options)
+  if (options) options = wrap(options)
 
   if (sdkTx.source === tx.specs.pubkey.neutral && options.stripNeutralSource) {
     options.strip = "source"
