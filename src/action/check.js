@@ -187,7 +187,7 @@ check.signer = function (signer, ctx) {
 }
 
 check.sequence = function (sequence, ctx) {
-  return checkInteger(ctx, sequence, "sequence", 0) || sequence
+  return checkInteger(ctx, Number(sequence), "sequence", 0) || sequence
 }
 
 check.threshold = function (threshold, ctx) {
@@ -211,7 +211,7 @@ function error (ctx, message) {
 
 function checkInteger (ctx, value, type, min, max) {
   if (parseInt(value) + "" !== value + "") {
-    return error(ctx, `Not an integer: ${value}`)
+    return error(ctx, `Invalid ${type} (should be an integer): ${value}`)
   }
   return checkNumber(ctx, value, type, min, max)
 }
