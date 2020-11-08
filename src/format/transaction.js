@@ -68,7 +68,7 @@ decode.asset = function (asset) {
 }
 
 decode.assetPath = function (assetPath) {
-  return assetPath.map(asset => decode.asset(asset))
+  return assetPath.map((asset) => decode.asset(asset))
 }
 
 decode.amount = function (amount) {

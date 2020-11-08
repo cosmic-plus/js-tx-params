@@ -19,7 +19,7 @@ class TxAction {
   }
 
   operations (ops, tx) {
-    return ops.map(op => {
+    return ops.map((op) => {
       if (this.opBefore) op = this.opBefore(op, tx) || op
       this.iterate(op, tx)
       if (this.opAfter) op = this.opAfter(op, tx) || op

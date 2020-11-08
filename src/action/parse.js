@@ -42,7 +42,7 @@ parse.assetPath = function (assetPath) {
   if (typeof assetPath === "string") {
     return query.decode.assetPath(assetPath)
   } else if (Array.isArray(assetPath)) {
-    return assetPath.map(asset => parse.asset(asset))
+    return assetPath.map((asset) => parse.asset(asset))
   }
 }
 

@@ -46,7 +46,7 @@ check.opBefore = function (op, ctx) {
     error(ctx, `Unknown operation: ${op.type}`)
   }
 
-  ctx.specs.opMandatoryFields(op.type).forEach(field => {
+  ctx.specs.opMandatoryFields(op.type).forEach((field) => {
     if (!(field in op)) {
       error(ctx, `Missing parameter for '${op.type}': ${field}`)
     }
@@ -91,7 +91,7 @@ check.asset = function (asset, ctx) {
 }
 
 check.assetPath = function (assetPath, ctx) {
-  return assetPath.map(asset => check.asset(asset, ctx))
+  return assetPath.map((asset) => check.asset(asset, ctx))
 }
 
 check.authorizeFlag = function (flag, ctx) {

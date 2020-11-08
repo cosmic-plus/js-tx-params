@@ -110,7 +110,7 @@ ${op.buyAmount} ${op.buying} at ${op.price} ${op.buying} / unit`
         msg.push(`Set master key weight to: ${op.masterWeight}`)
       }
     }
-    ["lowThreshold", "medThreshold", "highThreshold"].forEach(field => {
+    ["lowThreshold", "medThreshold", "highThreshold"].forEach((field) => {
       if (field in op) {
         msg.push(`Set ${field} to: ${op[field]}`)
       }

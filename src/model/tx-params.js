@@ -11,7 +11,7 @@ class TxParams {
     const format = this.getFormat(formatId)
     const decoded = format.decode.transaction(new this(), data, options)
 
-    return sync(decoded, txParams => {
+    return sync(decoded, (txParams) => {
       txParams.normalize()
       return txParams
     })
@@ -87,7 +87,7 @@ TxParams.setFormat = function (name, rules) {
 
 function sync (value, callback) {
   if (type(value) === "promise") {
-    return value.then(x => callback(x))
+    return value.then((x) => callback(x))
   } else {
     return callback(value)
   }

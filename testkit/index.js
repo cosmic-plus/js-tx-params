@@ -13,14 +13,14 @@ class Testkit extends Array {
     super()
 
     Object.assign(this, data)
-    this.forEach(tx => {
+    this.forEach((tx) => {
       tx.json = JSON.stringify(tx.params, null, 2)
     })
   }
 
   testFormat (formatName, encoder, decoder) {
-    const encode = json => encoder(JSON.parse(json))
-    const decode = any => JSON.stringify(decoder(any), null, 2)
+    const encode = (json) => encoder(JSON.parse(json))
+    const decode = (any) => JSON.stringify(decoder(any), null, 2)
     this.run(encode, "json", formatName)
     this.run(decode, formatName, "json")
   }
@@ -29,7 +29,7 @@ class Testkit extends Array {
     let testCount = 0,
       errorCount = 0
 
-    this.forEach(tx => {
+    this.forEach((tx) => {
       testCount++
 
       try {
@@ -81,7 +81,7 @@ Testkit.generate.promise = async function (tx) {
   }
 
   // Special case: manageData unset entry.
-  tx.params.operations.forEach(op => {
+  tx.params.operations.forEach((op) => {
     if (op.type === "manageData" && op.value === "") {
       op.value = { type: "text", value: "" }
     }

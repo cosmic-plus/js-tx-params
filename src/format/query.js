@@ -122,7 +122,7 @@ decode.asset = function (asset) {
 }
 
 encode.assetPath = function (assetPath) {
-  return assetPath.map(asset => encode.asset(asset)).toString()
+  return assetPath.map((asset) => encode.asset(asset)).toString()
 }
 decode.assetPath = function (assetsList) {
   return assetsList.split(",").map(decode.asset)

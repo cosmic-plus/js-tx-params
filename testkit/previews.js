@@ -8,7 +8,7 @@ const TxParams = require("../src")
 /* Logic */
 TxParams.setFormat("preview", require("../src/format/preview"))
 
-new Testkit().forEach(test => {
+new Testkit().forEach((test) => {
   const tx = new TxParams(test.params)
   // eslint-disable-next-line no-console
   console.log(
