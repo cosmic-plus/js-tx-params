@@ -19,6 +19,17 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.0.0 - 2021-09-17
+
+### Added
+
+- API: Add support for claimClaimableBalance operation.
+
+### Changed
+
+- Meta: Update dependencies.
+- Meta: Upgrade stellar-sdk to 8.x.
+
 ## 1.0.0-beta.7 - 2020-09-12
 
 ### Changed
